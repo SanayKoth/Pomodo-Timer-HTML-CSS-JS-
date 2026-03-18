@@ -1,0 +1,113 @@
+/* Reset default browser margin/padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  /* Radial gradient: white in center, baby blue on edges */
+  background: radial-gradient(circle, #ffffff 0%, #b5d7f5 100%);
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+
+#Header{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin: 0px;
+  text-align: center;
+  font-size:30px;
+  background: #7f9ef1;
+  font-family:'Courier New', Courier, monospace;
+  font-weight: bold;
+  color:aliceblue;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+}
+
+/* Container for timers side by side */
+.timers {
+  display: flex;
+  justify-content: center; /* center horizontally */
+  gap: 60px; /* space between timers */
+  margin-top: 60px; /* spacing from header */
+  flex-wrap: wrap; /* stack on small screens */
+}
+h1{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  padding-bottom: 40px;
+  color: aliceblue;
+}
+
+/* Timer container */
+.timer-box {
+  padding: 100px;
+  text-align: center;
+  background-color: #93acee;
+  border-radius: 40px;
+  transition: all 0.4s ease;
+}
+.timer-box:hover{
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+}
+
+/* Timer text */
+#timer1, #timer2 {
+  font-size: 4rem;
+  margin-bottom: 15px;
+  font-family: 'Courier New', Courier, monospace;
+  color: aliceblue;
+}
+
+/* Buttons container */
+.buttons button {
+  padding: 8px 16px;
+  margin: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+}
+button{
+  transition: all 0.4s ease;
+}
+button:hover{
+  transform: scale(1.2);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+}
+.notes-box {
+  width: 1010px;
+  max-width: 90%;
+  margin: 40px auto; /* center on page */
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+  background: #ffffff; 
+  transition: all 0.4s ease;
+}
+.notes-box:hover{
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+}
+
+
+.notes-box h2 {
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #1a1a1a;
+  text-align: center;
+}
+
+.notes-box textarea {
+  width: 100%;
+  height: 200px;
+  padding: 15px;
+  border-radius: 15px;
+  border: 1px solid rgba(0,0,0,0.1);
+  font-size: 1rem;
+  resize: vertical; /* users can make it taller */
+}

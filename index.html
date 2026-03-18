@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sanay's Pomodoro</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header id = "Header">Sanay's Pomodoro</header>
+
+<div class="timers">
+  <!-- Work Timer (25 min) -->
+  <div class="timer-box focus">
+    <h1 id="Work label">Work timer:</h1>
+    <div id="timer1">25:00</div>
+    <div class="buttons">
+      <button id="start1">Start</button>
+      <button id="pause1">Pause</button>
+      <button id="reset1">Reset</button>
+    </div>
+  </div>
+
+  <!-- Break Timer (5 min) -->
+  <div class="timer-box break">
+    <h1 id="Break label">Break timer:</h1>
+    <div id="timer2">05:00</div>
+    <div class="buttons">
+      <button id="start2">Start</button>
+      <button id="pause2">Pause</button>
+      <button id="reset2">Reset</button>
+    </div>
+  </div>
+</div>
+<!-- Notes section -->
+<div class="notes-box">
+  <h2>Notes</h2>
+  <textarea id="notes" placeholder="Type anything you want..."></textarea>
+</div>
+<!-- Scripts -->
+<script src="script.js"></script>
+<script src="script2.js"></script>
+<script src="clicksound.js"></script>
+
+</body>
+</html>
