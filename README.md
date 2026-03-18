@@ -9,8 +9,8 @@ Designed for focus and productivity, with smooth interactions and a soft, baby-b
 
 This app uses an **island-style layout** to organize your workflow:
 
--  **Left Island** → 25-minute work timer (`script1.js`)  
--  **Right Island** → break timer (`script2.js`)  
+-  **Left Island** → 25-minute work timer (`workTimer.js`)  
+-  **Right Island** → break timer (`breakTimer.js`)  
 -  **Bottom Island** → notes section for jotting down tasks or ideas  
 
 The layout emphasizes simplicity, calm visuals, and intuitive interaction.
