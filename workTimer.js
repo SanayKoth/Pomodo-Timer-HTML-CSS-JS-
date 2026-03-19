@@ -11,45 +11,47 @@
   const resetBtn = document.getElementById('reset1'); //reset button
   //function to update timer display
   function updateTimerDisplay() {
+    //ensure minutes and seconds are always 2 digit
     const m = String(minutes).padStart(2, '0');
     const s = String(seconds).padStart(2, '0');
-    timerDisplay.textContent = `${m}:${s}`;
+    timerDisplay.textContent = `${m}:${s}`;//update
   }
-  updateTimerDisplay();
-
+  updateTimerDisplay();//initialize display immediately
+  //function to start and run the timer
   function startTimer() {
-    if (isRunning) return;
-    isRunning = true;
+    if (isRunning) return;//do nothing if timer is already running
+    isRunning = true;//set timer as running
+    //set up intervals to count down by 1 second
     intervalId = setInterval(() => {
       if (seconds === 0) {
-        if (minutes === 0) {
+        if (minutes === 0) {//if minutes and seconds reach 0, timer is up
           clearInterval(intervalId);
           isRunning = false;
-          alert("Time's up!");
+          alert("Time's up!");//alert user
           return;
         }
-        minutes--;
-        seconds = 59;
+        minutes--;//decrease by 1 minute
+        seconds = 59;//reset seconds
       } else {
-        seconds--;
+        seconds--;//otherwise, only decrease seconds
       }
-      updateTimerDisplay();
+      updateTimerDisplay();//run this every second
     }, 1000);
   }
 
   function pauseTimer() {
-    clearInterval(intervalId);
-    isRunning = false;
+    clearInterval(intervalId);//stop timer
+    isRunning = false;//mark as not running
   }
 
   function resetTimer() {
-    clearInterval(intervalId);
-    isRunning = false;
-    minutes = 25;
+    clearInterval(intervalId);//stop timer
+    isRunning = false;//mark as not running
+    minutes = 25;//reset
     seconds = 0;
-    updateTimerDisplay();
+    updateTimerDisplay();//set timer to default
   }
-
+  //attach event listners to buttons
   startBtn.addEventListener('click', startTimer);
   pauseBtn.addEventListener('click', pauseTimer);
   resetBtn.addEventListener('click', resetTimer);
