@@ -44,12 +44,16 @@ The layout emphasizes simplicity, calm visuals, and intuitive interaction.
 - **clicksound.js** → Makes sure that moustClick.mp3 is played every time a button is pressed
 - **mouseClick.mp3** → Sound effect of soft mouse click that matches the soft aesthetic of the site
 
+---
+
 ## 🚀 Future Improvements
 
 - Add adjustable work/break durations
 - Save notes locally using localStorage
 - Mobile-friendly responsive layout
 - Add themes or color options
+
+---
 
 ## 📌 Notes
 
