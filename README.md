@@ -59,4 +59,4 @@ The layout emphasizes simplicity, calm visuals, and intuitive interaction.
 
 - Designed for focus and productivity
 - Uses modern HTML, CSS, and vanilla JS best practices
-- All debugging and problem-solving during development was assisted using AI tools as a productivity aid
+- All Javascript debugging and problem-solving during development was assisted using AI tools as a productivity aid
